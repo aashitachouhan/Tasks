@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+             #geekhaven{
+               width: 100px;
+               height: 100px;
+            }body{
+            width:100vw;
+            height:100vh;
+            background-color: lightpink;
+            }.top{
+               position: absolute;
+               left: 65vw;
+               top: 30px;
+               font-size: 35px;
+               color: green;
+            }.top1{
+               position: absolute;
+               left: 80vw;
+               top: 30px;
+               font-size: 35px;
+               color: green;
+            }a:hover{
+                background-color: lightcoral;
+            }.topnav a{
+               float: left;
+               display: block;
+                color: #f2f2f2;
+              text-align: center;
+               padding: 14px 16px;
+               font-size: 30px;
+             }.topnav a:hover{
+             background-color: #ddd;
+              color: black;
+               }.topnav a.active{
+               background-color: #4CAF50;
+             }.topnav .icon{
+                display: none;
+            }
+            #pic1{
+                position: absolute;
+                left: 12vw;
+                top: 30vh;
+                width: 330px;
+                height: 330px;
+                border-radius: 50%;
+            }.circle{
+                width: 105px;
+                height: 105px;
+                background-color:#04f0cc;
+                border-radius: 50%;
+                opacity: 0.5;
+                position: absolute;
+                left: 12vw;
+                top: 70vh;
+            }.cross-1{
+                font-size: 3rem;
+                position: absolute;
+                left: 34vw;
+                top: 30vh;
+                
+            }.cross-2{
+                font-size: 3rem;
+                position: absolute;
+                left: 26vw;
+                top: 85vh;
+            }
+            .bodypart{
+                position: absolute;
+                left: 50vw;
+                top: 30vh;
+                color: white;
+                display: inline-block;
+            }h1{
+                text-shadow: 2px 2px 5px orangered;
+            }
+            div:hover{
+                color: blue;
+                text-shadow: 4px 4px 5px lightblue;;
+            }h1:hover{
+                color: orange;
+                text-shadow: 2px 2px 5px yellow;
+            }.pic:hover img{
+                transform: scale(1.08);
+                box-shadow: 0 0 10px yellow;
+            }.heading{
+                color: red;
+            }.aboutme2{
+                padding-right:60px;
+                color: black;
+                font-weight: 900;
+                font-size: 20px;
+            }.aboutme{
+                padding-right:55px;
+                color: Purple;
+            }.footerhead{
+                position: absolute;
+                top: 88vh;
+                left: 40vw;
+                font-size: 20px;
+            }.icons{
+                position: absolute;
+                top: 88vh;
+                left: 43vw;
+                text-align: center;
+            }.fa1{
+                color: red;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border:green;
+                border-style: solid;
+                border-width: 5px;
+                text-align: center;
+            }.footerhead{
+                position: absolute;
+                top: 93vh;
+                left: 40vw;
+            }
+            @media screen and (max-width: 1000px){
+                   body{
+                       width: 40vw;
+                       height: 170vh;
+                       background-color: lightpink;
+                   }
+                   .bodypart{
+                       position: absolute;
+                       left: 10px;
+                       top: 100vh;
+                   }.icons{
+                       position: absolute;
+                       left: 30vw;
+                       top: 160vh;
+                       display: inline-block;
+                   }.footerhead{
+                    position: absolute;
+                       left: 20vw;
+                       top: 166vh;
+                   }.cross-1{
+                       position: absolute;
+                       left: 62vw;
+                       top: 30vh;
+                   }.cross-2{
+                       position: absolute;
+                       left: 40vw;
+                       top: 88vh;
+                   }.topnav a.icon{
+                       display: block;
+                       position: absolute;
+                       right: 0;
+                       top: 0;                      
+                   }.topnav a{
+                       display: none;
+                       right: 0;
+                       top: 0;
+                   }.topnav.responsive{
+                       position: absolute;
+                   }.topnav.responsive .icon{
+                       position: absolute;
+                       right: 0;
+                       top: 0;
+                   }.topnav.responsive a{
+                       float: none;
+                       display: block;
+                       text-align: left;
+                   }.link1{
+                       display: block;
+                       transition: 0.2s;
+                   }
+            }
+        </style>
+        <script>
+            function responsive_menu(){
+                var e = document.getElementById("mytopnav");
+                if(e.className === "topnav"){
+                    e.className += " responsive";
+                }else{
+                    e.className = "topnav";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <img src="https://geekhaven.iiita.ac.in/images/gh.svg" id="geekhaven" width="150px" heigth="150px" >
+            <div class="topnav" id="mytopnav">
+             <div class="link1"> <a href="#About" class="top">About</a>
+              <a href="#Contact" class="top1">Contact</a>
+            </div>
+              <a href="#" class="icon" onclick="responsive_menu()"><i class="fa fa2 fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="pic">
+           <div > <img src="https://ak8.picdn.net/shutterstock/videos/4620218/thumb/12.jpg?i10c=img.resize(height:160)"  id="pic1"></div>
+            <div class="circle"></div>
+            <div class="cross-1">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="cross-2">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="same1">
+        <div class="bodypart ">
+            <h1 class="heading">AASHITA CHOUHAN</h1>
+            <h2 class="aboutme">Hello,everyone!!I am the first year student of IIIT Allahabad of IT branch.</h2>
+            <div class="aboutme2">
+                I am very fond of dance.IIIT Allahabad is very famous for its coding culture and that's the main reason which enforce me to join it.
+                I am a beginner in coding but I like to code.I like to play badminton and chess.I love to watch movies and a big fan of Harry Potter series.            </div>
+            </div>
+        </div><br>
+        <footer class="bottom">
+         <div class="icons">
+            <a href="https://github.com/aashitachouhan/Aparoksha-Month-Webd.git" ><i class="fa fa1 fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/shyam.ji.5201/" ><i class="fa fa1 fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/aashita_chouhan" ><i class="fa fa1 fa-instagram" aria-hidden="true"></i></a>
+            <i class="fa fa1 fa-twitter" aria-hidden="true" ></i>
+            <a href="mailto:iit2020124@iiita.ac.in"><i class="fa fa1 fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <div class="footerhead">
+            Made by Aashita Chouhan 
+            <span>&#169 twentytwenty;</span>
+        </div>
+    </footer>
+    </div>
+    </body>
+</html>
